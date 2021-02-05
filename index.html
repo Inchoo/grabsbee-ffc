@@ -21,7 +21,9 @@
                         <fieldset>
                             <legend>Grabsee search form</legend>
                             <label for="search">Enter here your search term</label>
-                            <input name="search" type="text">
+                            <input name="search" type="search" 
+                                    placeholder="Enter here your search term"
+                                    aria-label="Search through site content">
                             <button>Search it</button>
                         </fieldset>
                     </form>
@@ -284,7 +286,7 @@
 
         <section>
             <details open>
-                <summary>Categories</summary>
+                <summary><h2>Categories</h2></summary>
 
                 <ul>
                     <li>
@@ -303,7 +305,7 @@
             </details>
 
             <details>
-                <summary>Contact us</summary>
+                <summary><h2>Contact us</h2></summary>
 
                 <ul>
                     <li><address>Trg Slobode 6</address></li>
@@ -314,9 +316,10 @@
 
         </section>
 
-        <section>
+        <div>
             <small>Copyright &reg; 2021 Grabsbee</small>
-        </section>
+        </div>
+
     </footer>
 </body>
 </html>
