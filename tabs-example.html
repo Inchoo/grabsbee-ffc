@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inchoo FCC - TABs example</title>
+</head>
+
+<body>
+    <section>
+        <h2>Inchoo</h2>
+        <form>
+            <fieldset>
+                <legend>Tab Testing</legend> 
+                <ul>
+                    <li>
+                        <label for="name">Fill in your name:</label>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>
+                        <label for="mood">Choose your mood:</label>
+                        <select id="mood" name="mood">
+                            <option>Happy</option>
+                            <option>Sad</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </section>
+
+    <section>
+        <h2>Unorder list testing</h2>
+
+        <ul id="mb1">
+            <li id="mb1_menu1"> Font
+              <ul id="fontMenu" title="Font">
+                <li id="sans-serif">Sans-serif</li>
+                <li id="serif"><a href="#test">Test A</a></li>
+                <li id="monospace">Monospace</li>
+                <li id="fantasy">Fantasy</li>
+              </ul>
+            </li>
+            <li id="mb1_menu2"> Style
+              <ul id="styleMenu" title="Style">
+                <li id="italic">Italics</li>
+                <li id="bold">Bold</li>
+                <li id="underline">Underlined</li>
+              </ul>
+            </li>
+            <li id="mb1_menu3"> Justification
+              <ul tabindex="0" id="justificationMenu" title="Justification">
+                <li tabindex="1" id="left">Left</li>
+                <li tabindex="0" id="center">Centered</li>
+                <li tabindex="0" id="right">Right</li>
+                <li tabindex="2" id="justify">Justify</li>
+              </ul>
+            </li>
+          </ul>
+    </section>
+      
+</body>
+</html>
