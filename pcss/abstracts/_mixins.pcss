@@ -1,0 +1,142 @@
+/*------------------------------------------------------------*\
+                       GENERAL MIXINS
+\*------------------------------------------------------------*/
+
+/*
+ * Mixin to drop micro clearfix into a selector. Further reading:
+ * http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
+ */
+
+@define-mixin clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+/*------------------------------------------------------------*\
+                        POSITION MIXINS
+\*------------------------------------------------------------*/
+
+/*
+ * Generic position mixin for better CSS markup
+ * Used by other mixins
+ */
+
+@define-mixin position $position, $top, $right, $bottom, $left {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/*
+ * Shorthand mixin for absolute positioning
+ * Serves as an alias for `position(absolute, ...)`
+ * @param {Arglist} $args - Offsets
+ * @require {mixin} position
+ */
+
+@define-mixin absolute $top, $right, $bottom, $left {
+  @mixin position absolute, $top, $right, $bottom, $left;
+}
+
+/*
+ * Shorthand mixin for fixed positioning
+ * Serves as an alias for `position(fixed, ...)`
+ * @param {Arglist} $args - Offsets
+ * @require {mixin} position
+ */
+
+@define-mixin fixed $top, $right, $bottom, $left {
+  @mixin position fixed, $top, $right, $bottom, $left;
+}
+
+/*
+ * Layout Container
+ */
+
+@define-mixin container $max-width, $gutter-width {
+  min-width: 320px;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
+}
+
+/*
+ * Default UI transition
+ */
+
+@define-mixin ui-default-transition $proptype {
+  transition: $proptype 460ms cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/*------------------------------------------------------------*\
+                        DISPLAY MIXINS
+\*------------------------------------------------------------*/
+
+@define-mixin no-display {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@define-mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@define-mixin section-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@define-mixin icon-font-display $content {
+  font-family: "icomoon";
+  content: $content;
+}
+
+@define-mixin truncate $width {
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*
+ * Flex display
+ */
+
+@define-mixin flex $direction, $vcenter, $hcenter, $wrap {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $vcenter;
+  justify-content: $hcenter;
+  flex-wrap: $wrap;
+}
+
+@define-mixin aspect-ratio-calc $height, $width {
+  &::before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-bottom: calc(($height / $width) * 100%);
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

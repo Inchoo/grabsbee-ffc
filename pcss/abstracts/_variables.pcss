@@ -1,0 +1,44 @@
+$container-width: 1448px;
+$container-gutter: 1.5rem;
+$bp-large: 1024px;
+
+@custom-media --large (min-width: $bp-large);
+
+:root {
+  --blue-color: #12167a;
+  --red-color: #ec1d2e;
+  --neutral-color: #44ee4e;
+
+  /* Primary colors */
+
+  --primary__color: var(--blue-color);
+  --primary-10: #b9121d;
+  --primary-20: #d41727;
+  --primary-30: #740d15;
+
+  /* Secondary colors */
+
+  --secondary__color: var(--red-color);
+
+  /* Neutral colors */
+  --text__color: var(--neutral-color);
+
+  /* Components */
+
+  /* Links */
+
+  --link__color: var(--primary__color);
+  --link__visited__color: var(--primary-10);
+  --link__hover__color: var(--primary-20);
+  --link__active__color: var(--primary-30);
+
+  /* Buttons */
+
+  --button-primary__background: var(--primary__color);
+  --button-primary__background--hover: var(--secondary__color);
+
+  /* Headings */
+
+  --headings__type: "Anton", sans-serif;
+  --body__type: "Open Sans", sans-serif;
+}

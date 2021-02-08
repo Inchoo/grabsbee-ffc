@@ -1,0 +1,46 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: pxtorem(12, 14);
+  padding-right: pxtorem(12, 14);
+  @mixin ui-default-transition all;
+
+  @media (--large) {
+    font-size: 16px;
+    height: 48px;
+    padding-left: pxtorem(32, 14);
+    padding-right: pxtorem(32, 14);
+  }
+}
+
+.button--primary {
+  color: white;
+  background: var(--button-primary__background);
+
+  &:hover {
+    background: var(--button-primary__background--hover);
+  }
+}
+
+.button--no-styles {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "grabsbee",
+  "version": "1.0.4",
+  "description": "Frontend toolbox for Grabsbee",
+  "main": "gulpconfig.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Fico <filip.svetlicic@gmail.com>",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "^9.4.10",
+    "browser-sync": "^2.26.7",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rtlcss": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^8.0.0",
+    "lost": "^8.3.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-functions": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-simple-vars": "^5.0.2",
+    "stylelint": "^9.10.1"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.8"
+  }
+}
