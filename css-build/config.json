@@ -25,5 +25,5 @@
     }
   },
   "browsers": ["last 3 versions", "not ie < 10", "safari >=5"],
-  "projectUrl": "http://localhost:3000/index.html"
+  "projectUrl": "http://127.0.0.1:5500/"
 }
