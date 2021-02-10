@@ -17,6 +17,9 @@ button {
   text-transform: uppercase;
   padding-left: pxtorem(12, 14);
   padding-right: pxtorem(12, 14);
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   @mixin ui-default-transition all;
 
   @media (--large) {
@@ -30,10 +33,16 @@ button {
 .button--primary {
   color: white;
   background: var(--button-primary__background);
+  border-color: white;
 
   &:hover {
     background: var(--button-primary__background--hover);
   }
+}
+
+.button--secondary {
+  color: var(--button-secondary__background__color);
+  border-color: var(--button-secondary__background__color);
 }
 
 .button--no-styles {

@@ -108,7 +108,7 @@ gulp.task('lint:css', function () {
 
 gulp.task('css:watch:dev', function () {
     return gulp
-        .watch(config.css.inputPathAll, gulp.series('lint:css', 'css:compile:dev'));
+        .watch(config.css.inputPathAll, gulp.series('css:compile:dev'));
 });
 
 gulp.task('css:watch:prod', function () {
@@ -118,6 +118,6 @@ gulp.task('css:watch:prod', function () {
 
 /* --- Development/Production chained sets --- */
 
-gulp.task("dev", gulp.series('lint:css', 'css:compile:dev', gulp.parallel('css:watch:dev', 'browser:sync')));
+gulp.task("dev", gulp.series('css:compile:dev', gulp.parallel('css:watch:dev', 'browser:sync')));
 
 gulp.task("prod", gulp.series('lint:css', 'css:compile:prod'));
