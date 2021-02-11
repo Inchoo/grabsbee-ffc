@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Grabsee">
     <title>Grabsee - Best place to get profi frisbee gear</title>
 
     <link href="./style.css" rel="stylesheet" type="text/css"/>
@@ -26,9 +28,11 @@
             </h1>
 
             <ul class="header__drawers-list">
-                <li>
+                <li class="header__drawers-list__item">
                     <button class="button--no-styles header__buttons">
-                        <span class="icon-search"></span> <span class="visualy-hidden">Search</span></button>
+                        <span class="icon-search"></span> 
+                        <span class="visualy-hidden">Search From Trigger</span>
+                    </button>
 
                     <div class="visualy-hidden">
                         <form>
@@ -38,21 +42,35 @@
                                 <input name="search" type="search" 
                                         placeholder="Enter here your search term"
                                         aria-label="Search through site content">
-                                <button>Search it</button>
+                                <button class="button--no-styles">
+                                    <span class="icon-search"></span>
+                                    <span class="visualy-hidden">Search it</span>
+                                </button>
                             </fieldset>
                         </form>
 
-                        <button>Close</button>
+                        <button class="button--no-styles header__buttons">
+                            <span>Close</span>
+                            <span class="icon-x-circle"></span>
+                        </button>
                     </div>
                 </li>
-                <li>
+                
+                <li class="header__drawers-list__item">
                     <button class="button--no-styles header__buttons">
-                        <span class="icon-shopping-cart"></span> <span class="visualy-hidden">Cart</span></button>
+                        <span class="icon-shopping-cart"></span> 
+                        <span class="visualy-hidden">Cart</span>
+                    </button>
 
                     <section class="visualy-hidden">
-                        <header>
-                            <p># item in Cart</p>
-                        </header>
+                        <h2>
+                            <p>XY item in Cart</p>
+                        </h2>
+
+                        <button class="button--no-styles header__buttons">
+                            <span>Close</span>
+                            <span class="icon-x-circle"></span>
+                        </button>
                         
                         <ol>
                             <li>
@@ -61,9 +79,9 @@
                                 </div>
 
                                 <div>
-                                    <h2>
+                                    <h3>
                                         <a href="">Item name 1</a>
-                                    </h2>
+                                    </h3>
                 
                                     <dl>
                                         <dt tabindex="0">Color</dt>
@@ -74,8 +92,8 @@
                                         <dd>
                                             <form>
                                                 <fieldset>
-                                                    <legend>Item qty control</legend>
-                                                    <label for="qty"></label>
+                                                    <legend>Items qty form</legend>
+                                                    <label for="qty">Items in Cart</label>
                                                     <input name="qty" type="number">
                                                 </fieldset>
                                             </form>
@@ -89,9 +107,9 @@
                                 </div>
 
                                 <div>
-                                    <h2>
+                                    <h3>
                                         <a href="">Item name 2</a>
-                                    </h2>
+                                    </h3>
                 
                                     <dl>
                                         <dt tabindex="0">Color</dt>
@@ -102,8 +120,8 @@
                                         <dd>
                                             <form>
                                                 <fieldset>
-                                                    <legend>Item qty control</legend>
-                                                    <label for="qty"></label>
+                                                    <legend>Items qty form</legend>
+                                                    <label for="qty">Items in Cart</label>
                                                     <input name="qty" type="number">
                                                 </fieldset>
                                             </form>
@@ -133,9 +151,12 @@
                         </div>
                     </section>
                 </li>
-                <li>
-                    <button class="button--no-styles header__buttons">
-                        <span class="icon-menu"></span> <span class="visualy-hidden">Navigation Trigger</span></button>
+
+                <li class="header__drawers-list__item">
+                    <button class="button--no-styles header__buttons visualy-hidden--desktop">
+                        <span class="icon-menu"></span> 
+                        <span class="visualy-hidden">Navigation Trigger</span>
+                    </button>
 
                     <nav class="visualy-hidden">
                         <ul>
@@ -212,7 +233,10 @@
                             </li>
                         </ul>
 
-                        <button>Close Nav</button>
+                        <button class="button--no-styles header__buttons">
+                            <span>Close</span>
+                            <span class="icon-x-circle"></span>
+                        </button>
                     </nav>
                 </li>
             </ul>
@@ -220,22 +244,19 @@
     </header>
 
     <main>
-        <button class="button button--primary">Btn primary</button>
-        <button class="button button--secondary">Btn Secondary</button>
-
         <section>
             <ul>
                 <li>
                     <h2>The flying disk store</h2>
-                    <button>Buy the disk</button>
+                    <a href="./layout-category-listing.html" class="button button--primary">Buy the disk</a>
                     <picture>
                         <source>
-                        <img src="" alt="">
+                        <img src="" alt="The flying disk store">
                     </picture>
                 </li>
                 <li>
                     <h2>The flying slider 2</h2>
-                    <button>Buy the disk</button>
+                    <a href="./layout-category-listing.html" class="button button--primary">Buy the disk</a>
                     <picture>
                         <source>
                         <img src="" alt="">
@@ -243,7 +264,7 @@
                 </li>
                 <li>
                     <h2>The flying slider 3</h2>
-                    <button>Buy the disk</button>
+                    <a href="./layout-category-listing.html" class="button button--primary">Buy the disk</a>
                     <picture>
                         <source>
                         <img src="" alt="">
@@ -268,7 +289,7 @@
                         <source>
                         <img src="" alt="">
                     </picture>
-                    <a href="">gear</a>
+                    <a href="">Gear</a>
                 </li>
                 <li>
                     <picture>
@@ -289,7 +310,7 @@
     </main>
 
     <footer>
-        <section>
+        <section class="container newsletter__content">
             <h2>Newsletter</h2>
             <p tabindex="0">Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
 
@@ -304,22 +325,22 @@
             </form>
         </section>
 
-        <section>
+        <section class="container summary__content">
             <details open>
                 <summary><h2>Categories</h2></summary>
 
-                <ul>
+                <ul class="">
                     <li>
-                        <a href="">Frisbee</a>
+                        <a class="" href="">Frisbee</a>
                     </li>
                     <li>
-                        <a href="">Gear</a>
+                        <a class="" href="">Gear</a>
                     </li>
                     <li>
-                        <a href="">Accessories</a>
+                        <a class="" href="">Accessories</a>
                     </li>
                     <li>
-                        <a href="">Gifts</a>
+                        <a class="" href="">Gifts</a>
                     </li>
                 </ul>
             </details>
@@ -329,17 +350,16 @@
 
                 <ul>
                     <li tabindex="0"><address>Trg Slobode 6</address></li>
-                    <li><a href="tel:+385958811630">+385 95 8811630</a></li>
-                    <li><a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
+                    <li><a class="" href="tel:+385958811630">+385 95 8811630</a></li>
+                    <li><a class="" href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
                 </ul>
             </details>
 
         </section>
 
-        <div>
+        <div class="container">
             <small tabindex="0">Copyright &reg; 2021 Grabsbee</small>
         </div>
-
     </footer>
 </body>
 </html>

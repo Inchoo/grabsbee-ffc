@@ -90,6 +90,7 @@ p {
 
 a {
   @mixin ui-default-transition color;
+  cursor: pointer;
 
   &:hover {
   }
@@ -103,10 +104,10 @@ ul {
   font-family: "Inchoo-Icons";
   src: url("fonts/Inchoo-Icons.eot?s9olwx");
   src: url("fonts/Inchoo-Icons.eot?s9olwx#iefix") format("embedded-opentype"),
-  url("fonts/Inchoo-Icons.woff2?s9olwx") format("woff2"),
-  url("fonts/Inchoo-Icons.ttf?s9olwx") format("truetype"),
-  url("fonts/Inchoo-Icons.woff?s9olwx") format("woff"),
-  url("fonts/Inchoo-Icons.svg?s9olwx#Inchoo-Icons") format("svg");
+    url("fonts/Inchoo-Icons.woff2?s9olwx") format("woff2"),
+    url("fonts/Inchoo-Icons.ttf?s9olwx") format("truetype"),
+    url("fonts/Inchoo-Icons.woff?s9olwx") format("woff"),
+    url("fonts/Inchoo-Icons.svg?s9olwx#Inchoo-Icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -114,7 +115,6 @@ ul {
 
 [class^="icon-"],
 [class*=" icon-"] {
-  
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Inchoo-Icons" !important;
   speak: never;
