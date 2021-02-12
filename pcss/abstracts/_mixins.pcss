@@ -147,3 +147,8 @@
     clear: both;
   }
 }
+
+@define-mixin aspect-ratio-calc-old $height, $width {
+  height: 0;
+  padding-bottom: calc(($height / $width) * 100%);
+}
