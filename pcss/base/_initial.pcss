@@ -1,3 +1,7 @@
 .container {
   @mixin container $container-width, $container-gutter;
 }
+
+details > summary::-webkit-details-marker {
+  display: none;
+}

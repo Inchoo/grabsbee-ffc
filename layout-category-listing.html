@@ -390,56 +390,62 @@
         </dl>
     </aside>
 
-    <footer>
-        <section class="container newsletter__content">
-            <h2>Newsletter</h2>
-            <p tabindex="0">Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
+    <footer class="footer">
+        <section class="newsletter__content">
+            <div class="container">
+                <h2 class="footer__title">Newsletter</h2>
+                <p tabindex="0">Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
 
-            <form action="">
-                <fieldset>
-                    <legend>Grabsee Newsletter Form</legend> 
-                    <label for="newsletter" tabindex="0">Enter your email in order to become the Grabsee subscriber</label>
-
-                    <input placeholder="Enter your email address" name="newsletter" type="email">
-                    <button class="button button--primary">Subscibe</button>
-                </fieldset>
-            </form>
+                <form action="">
+                    <fieldset>
+                        <legend class="visualy-hidden">Grabsee Newsletter Form</legend> 
+                        <label class="visualy-hidden" for="newsletter" tabindex="0">Enter your email in order to become the Grabsee subscriber</label>
+                        <input placeholder="Enter your email address" name="newsletter" type="email">
+                        <button class="button button--primary" type="submit">Subscibe</button>
+                    </fieldset>
+                </form>
+            </div>
         </section>
 
-        <section class="container summary__content">
-            <details open>
-                <summary><h2>Categories</h2></summary>
+        <section class="summary__content">
+            <div class="container">
+                <details class="footer__details" open>
+                    <summary class="footer__summary">
+                        <h2 class="footer__title footer__summary-title">Categories</h2>
+                    </summary>
 
-                <ul class="">
-                    <li>
-                        <a class="" href="">Frisbee</a>
-                    </li>
-                    <li>
-                        <a class="" href="">Gear</a>
-                    </li>
-                    <li>
-                        <a class="" href="">Accessories</a>
-                    </li>
-                    <li>
-                        <a class="" href="">Gifts</a>
-                    </li>
-                </ul>
-            </details>
+                    <ul class="">
+                        <li>
+                            <a class="summary__links" href="">Frisbee</a>
+                        </li>
+                        <li>
+                            <a class="summary__links" href="">Gear</a>
+                        </li>
+                        <li>
+                            <a class="summary__links" href="">Accessories</a>
+                        </li>
+                        <li>
+                            <a class="summary__links" href="">Gifts</a>
+                        </li>
+                    </ul>
+                </details>
 
-            <details>
-                <summary><h2>Contact us</h2></summary>
+                <details class="footer__details">
+                    <summary class="footer__summary">
+                        <h2 class="footer__title footer__summary-title">Contact us</h2>
+                    </summary>
 
-                <ul>
-                    <li tabindex="0"><address>Trg Slobode 6</address></li>
-                    <li><a class="" href="tel:+385958811630">+385 95 8811630</a></li>
-                    <li><a class="" href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
-                </ul>
-            </details>
-
+                    <ul>
+                        <li tabindex="0"><address>Trg Slobode 6</address></li>
+                        <li><a class="summary__links" href="tel:+385958811630">+385 95 8811630</a></li>
+                        <li><a class="summary__links" href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
+                    </ul>
+                </details>
+            </div>
         </section>
 
-        <div class="container">
-            <small tabindex="0">Copyright &reg; 2021 Grabsbee</small>
+        <div class="container copyright">
+            <small class="copyright__text" tabindex="0">Copyright &reg; 2021 Grabsbee</small>
         </div>
     </footer>
 </body>

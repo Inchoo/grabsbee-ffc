@@ -1,7 +1,52 @@
+.footer {
+  background-color: var(--pure-black);
+  color: var(--text__color__invert);
+}
+
+.footer__title {
+  @mixin section-title;
+  font-size: 12px;
+
+   @media (--large) {
+    font-size: 14px;
+  }
+}
+
 .newsletter__content {
   background-color: var(--secondary__color);
+  color: var(--text__color);
+  text-align: center;
+  padding-top: pxtorem(21);
+  padding-bottom: pxtorem(21);
+}
+
+.footer__summary {
+ cursor: pointer;
+
+  &:before {
+    @mixin icon-font-display "\e909";
+  }
+}
+
+.footer__summary-title {
+  line-height: 2;
 }
 
 .summary__content {
   background-color: var(--primary__color);
+  color: var(--text__color__invert);
+}
+
+.summary__links {
+  text-decoration: none;
+  color: var(--text__color__invert);
+  font-weight: normal;
+}
+
+.copyright__text {
+  display: block;
+  line-height: 2;
+  text-align: center;
+  padding-top: pxtorem(9);
+  padding-bottom: pxtorem(9);
 }

@@ -1,5 +1,6 @@
 select,
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
   display: inline-block;
   width: 100%;
   height: pxtorem(36px);
@@ -46,6 +47,12 @@ select {
   &::-ms-expand {
     display: none;
   }
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 input[type="number"] {
